@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="150" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+  <title id="title">HyperDeck Dashboard</title>
+  <desc id="desc">Red outlined HyperDeck screen icon with HyperDeck in white and Dashboard in red.</desc>
+  <g transform="translate(12 27) scale(1.5)">
+    <rect width="64" height="64" rx="12" fill="#08090b"/>
+    <rect x="10" y="16" width="44" height="32" rx="4" fill="none" stroke="#e23d3d" stroke-width="4"/>
+    <rect x="21" y="27" width="22" height="10" fill="none" stroke="#e23d3d" stroke-width="3"/>
+  </g>
+  <text x="135" y="68" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="800" letter-spacing=".6">HYPERDECK</text>
+  <text x="135" y="111" fill="#ef343b" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="500" letter-spacing=".7">DASHBOARD</text>
+</svg>

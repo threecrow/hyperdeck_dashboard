@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HyperDeck Dashboard is an open-source, cross-platform browser interface for controlling, monitoring, scheduling, and managing multiple Blackmagic Design HyperDeck recorders.">
+  <meta name="keywords" content="HyperDeck control, HyperDeck Dashboard, browser HyperDeck controller, Blackmagic HyperDeck software, multi-deck control, HyperDeck scheduler, HyperDeck automation, open-source broadcast control">
+  <meta name="author" content="Three Crow Studios, Rob Hammer">
+  <meta name="theme-color" content="#090b0e">
+  <link rel="canonical" href="https://github.com/Three-Crow-Studios/hyperdeck-dashboard">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HyperDeck Dashboard — Professional Control From Any Browser">
+  <meta property="og:description" content="Cross-platform, self-hosted browser control for multiple Blackmagic Design HyperDeck recorders.">
+  <meta property="og:image" content="assets/images/social-share.png">
+  <meta property="og:image:alt" content="HyperDeck Dashboard browser-based multi-deck control interface">
+  <meta property="og:site_name" content="HyperDeck Dashboard">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HyperDeck Dashboard">
+  <meta name="twitter:description" content="Cross-platform, self-hosted browser control for multiple Blackmagic Design HyperDeck recorders.">
+  <meta name="twitter:image" content="assets/images/social-share.png">
+  <meta name="twitter:image:alt" content="HyperDeck Dashboard browser-based multi-deck control interface">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "HyperDeck Dashboard",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "macOS, Windows, Linux",
+    "description": "Open-source, browser-based multi-deck control and automation for Blackmagic Design HyperDeck recorders.",
+    "softwareVersion": "Release Candidate",
+    "downloadUrl": "https://github.com/Three-Crow-Studios/hyperdeck-dashboard/releases/latest",
+    "codeRepository": "https://github.com/Three-Crow-Studios/hyperdeck-dashboard",
+    "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+    "author": {"@type":"Organization","name":"Three Crow Studios"}
+  }
+  </script>
+  <title>HyperDeck Dashboard | Browser-Based Multi-Deck Control</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/images/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#overview" aria-label="HyperDeck Dashboard home">
+        <img class="brand-logo brand-logo-app" src="assets/brand/hyperdeck-dashboard-app-logo.svg" alt="HyperDeck Dashboard">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span><span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#installation">Installation</a>
+        <a href="#documentation">Documentation</a>
+        <a href="downloads.html">Downloads</a>
+        <a class="js-repository" href="#download">GitHub</a>
+        <a class="nav-sponsor" href="#sponsor">Sponsor <span aria-hidden="true">♥</span></a>
+        <span class="header-release header-release-status-only" aria-label="Current release"><small data-release-status>Release Candidate</small></span>
+        <a class="button button-small button-primary js-download" href="#download">Download HyperDeck Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-showcase" id="overview">
+      <div class="hero-ambient" aria-hidden="true"></div>
+      <div class="container hero-showcase-grid">
+        <div class="hero-copy hero-showcase-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span><span data-release-status>Release Candidate</span></div>
+          <h1>Professional HyperDeck Control From Any Browser</h1>
+          <p class="hero-lede">HyperDeck Dashboard is a professional browser-based control application for Blackmagic Design HyperDeck recorders. It centralizes multi-deck monitoring, transport control, recording operations, media management, clip playback, playlist creation, scheduling, I/O configuration, diagnostics, and protected maintenance tools in one operator-focused interface.</p>
+          <p class="tagline">Cross-platform. Browser based. Self-hosted. Built for broadcast workflows.</p>
+          <div class="button-row">
+            <a class="button button-primary js-download" href="#download">Download HyperDeck Dashboard</a>
+            <a class="button button-secondary js-repository" href="#download">View on GitHub</a>
+          </div>
+          <p class="microcopy">Requires a compatible PHP web-server environment. MAMP is recommended for straightforward local installation on macOS or Windows.</p>
+          <a class="button mamp-download-button mamp-download-button-compact js-mamp" href="https://www.mamp.info/en/downloads/" aria-label="Download MAMP Local Server">
+            <svg class="mamp-button-icon mamp-button-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 14v5h14v-5"/></svg>
+            <span>Download MAMP</span>
+            <svg class="mamp-button-icon mamp-button-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v6H5V6h6"/></svg>
+          </a>
+        </div>
+        <div class="hero-app-stage reveal">
+          <div class="hero-app-glow" aria-hidden="true"></div>
+          <button class="hero-app-image lightbox-trigger" type="button" data-image="assets/images/raw/dashboard-main.png" aria-label="Open main HyperDeck Dashboard screenshot">
+            <img src="assets/images/dashboard-main.jpg" alt="HyperDeck Dashboard showing three connected recorders and transport controls">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visual-features" id="features">
+      <div class="container">
+        <div class="visual-features-heading reveal">
+          <h2><span>Powerful features.</span> Built for real-world production.</h2>
+        </div>
+        <div class="visual-feature-grid">
+          <article class="visual-feature-card reveal">
+            <div class="visual-feature-copy"><h3>Scheduler &amp; Automation</h3><p>Schedule recordings, automate workflows, and never miss a moment.</p></div>
+            <button class="visual-feature-image lightbox-trigger" type="button" data-image="assets/images/raw/feature-scheduler.png" aria-label="Open Scheduler and Automation screenshot"><img src="assets/images/feature-scheduler.jpg" alt="Scheduler and automation interface"></button>
+          </article>
+          <article class="visual-feature-card reveal">
+            <div class="visual-feature-copy"><h3>Media Management</h3><p>Monitor media, check capacity, format, and manage with confidence.</p></div>
+            <button class="visual-feature-image lightbox-trigger" type="button" data-image="assets/images/raw/feature-media.png" aria-label="Open Media Management screenshot"><img src="assets/images/feature-media.jpg" alt="Media management interface"></button>
+          </article>
+          <article class="visual-feature-card reveal">
+            <div class="visual-feature-copy"><h3>Timecode &amp; Transport</h3><p>Precision timecode control with jump, presets, loop, and external sync.</p></div>
+            <button class="visual-feature-image lightbox-trigger" type="button" data-image="assets/images/raw/feature-timecode.png" aria-label="Open Timecode and Transport screenshot"><img src="assets/images/feature-timecode.jpg" alt="Timecode and transport controls"></button>
+          </article>
+          <article class="visual-feature-card reveal">
+            <div class="visual-feature-copy"><h3>Clip Playback &amp; Playlist</h3><p>Browse, preview, and play clips or create custom playlists.</p></div>
+            <button class="visual-feature-image lightbox-trigger" type="button" data-image="assets/images/raw/feature-clips.png" aria-label="Open Clip Playback and Playlist screenshot"><img src="assets/images/feature-clips.jpg" alt="Clip playback and playlist interface"></button>
+          </article>
+          <article class="visual-feature-card reveal">
+            <div class="visual-feature-copy"><h3>I/O Configuration</h3><p>Configure video, audio, network, and recorder settings for every environment.</p></div>
+            <button class="visual-feature-image lightbox-trigger" type="button" data-image="assets/images/raw/feature-io.png" aria-label="Open I/O Configuration screenshot"><img src="assets/images/feature-io.jpg" alt="HyperDeck I/O configuration interface"></button>
+          </article>
+          <article class="visual-feature-card reveal">
+            <div class="visual-feature-copy"><h3>Preferences &amp; System</h3><p>Customize timing, deck configuration, interface preferences, and system behavior.</p></div>
+            <button class="visual-feature-image lightbox-trigger" type="button" data-image="assets/images/raw/feature-settings.png" aria-label="Open Preferences and System screenshot"><img src="assets/images/feature-settings.jpg" alt="Preferences and system settings interface"></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section multi-deck-showcase section-bordered">
+      <div class="container multi-deck-layout">
+        <div class="multi-deck-copy reveal">
+          <span class="section-kicker">Multi-Deck Control</span>
+          <h2>Control Multiple HyperDecks Simultaneously</h2>
+          <p>Monitor status, control transport, and manage recordings across all your HyperDecks from one unified interface.</p>
+        </div>
+        <div class="multi-deck-art reveal">
+          <button class="multi-deck-slice lightbox-trigger" type="button" data-image="assets/images/raw/dashboard-main.png" aria-label="Open multi-deck dashboard screenshot">
+            <img src="assets/images/dashboard-main.jpg" alt="Three HyperDeck recorder rows with timecode and transport controls">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section production-section section-bordered">
+      <div class="container reveal">
+        <span class="section-kicker">Production Environments</span>
+        <h2>Built for Real Production Environments</h2>
+        <p class="section-intro">For operators and engineers managing repeatable capture, playback, monitoring, and testing workflows across networked HyperDeck recorders.</p>
+        <figure class="production-image"><img src="assets/images/production-environment.jpg" alt="Dark broadcast control room with production monitors and equipment racks"><figcaption>Designed as an operational aid—not represented as safety-critical, fail-safe, or guaranteed for unattended mission-critical recording.</figcaption></figure>
+        <div class="use-case-grid" aria-label="Production workflow examples">
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 40h28M24 35V23M16 40l8-17 8 17M13 14a16 16 0 0 1 22 0M18 19a9 9 0 0 1 12 0"/><circle cx="24" cy="21" r="2"/></svg>
+            <h3>Broadcast Feed Capture</h3><p>Record satellite, network, and broadcast feeds automatically.</p>
+          </article>
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="13" width="26" height="22" rx="2"/><path d="M33 20l9-5v18l-9-5z"/></svg>
+            <h3>Studio Production</h3><p>Control multiple HyperDecks seamlessly in studio workflows.</p>
+          </article>
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="11" width="32" height="29" rx="3"/><path d="M8 19h32M16 7v8M32 7v8M15 26h2M23 26h2M31 26h2M15 33h2M23 33h2M31 33h2"/></svg>
+            <h3>Event Production</h3><p>Record conferences, events, and live shows with scheduling tools.</p>
+          </article>
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="31" cy="8" r="4"/><path d="M18 16l8-5 7 6 7 1M25 13l-5 11-9 3M20 24l8 6 8 10M18 26l-8 12M33 17l-4 8 8 3"/></svg>
+            <h3>Live Sports Recording</h3><p>Capture every moment with reliable multi-deck recording.</p>
+          </article>
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="6" width="30" height="36" rx="2"/><path d="M14 6v36M34 6v36M9 14h5M9 24h5M9 34h5M34 14h5M34 24h5M34 34h5"/></svg>
+            <h3>Clip Playback</h3><p>Browse and play clips from connected decks in the browser.</p>
+          </article>
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="8" width="25" height="29" rx="3"/><rect x="16" y="14" width="25" height="29" rx="3"/></svg>
+            <h3>Redundant Recording</h3><p>Record to multiple decks simultaneously for added reliability.</p>
+          </article>
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40V23M18 40h12M15 19a13 13 0 0 1 18 0M10 14a20 20 0 0 1 28 0M20 24a6 6 0 0 1 8 0"/><circle cx="24" cy="22" r="2"/></svg>
+            <h3>Transmission Recording</h3><p>Capture transmissions continuously and consistently.</p>
+          </article>
+          <article class="use-case-card">
+            <svg class="use-case-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="9" width="34" height="25" rx="2"/><path d="M11 23h6l3-7 6 15 4-10 3 2h4M18 41h12M24 34v7"/></svg>
+            <h3>Engineering &amp; Monitoring</h3><p>Monitor deck status, timecode, and system health in real time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section screenshot-gallery-section section-bordered" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="stats-heading reveal"><div><span class="section-kicker">Interface Tour</span><h2 id="gallery-title">Explore the Dashboard</h2></div><p class="gallery-help">Select a panel to enlarge it.</p></div>
+        <div class="screenshot-gallery reveal" data-gallery>
+          <button class="gallery-item lightbox-trigger is-active" type="button" data-image="assets/images/raw/dashboard-main.png"><img class="gallery-raw-preview" src="assets/images/raw/dashboard-main.png" alt=""><span>Dashboard</span><small>Multi-deck overview</small></button>
+          <button class="gallery-item lightbox-trigger" type="button" data-image="assets/images/raw/feature-scheduler.png"><img class="gallery-raw-preview" src="assets/images/raw/feature-scheduler.png" alt=""><span>Scheduler</span><small>Recording automation</small></button>
+          <button class="gallery-item lightbox-trigger" type="button" data-image="assets/images/raw/feature-media.png"><img class="gallery-raw-preview" src="assets/images/raw/feature-media.png" alt=""><span>Media</span><small>Storage management</small></button>
+          <button class="gallery-item lightbox-trigger" type="button" data-image="assets/images/raw/feature-clips.png"><img class="gallery-raw-preview" src="assets/images/raw/feature-clips.png" alt=""><span>Clips</span><small>Playback and playlists</small></button>
+          <button class="gallery-item lightbox-trigger" type="button" data-image="assets/images/raw/feature-settings.png"><img class="gallery-raw-preview" src="assets/images/raw/feature-settings.png" alt=""><span>Settings</span><small>System configuration</small></button>
+        </div>
+        <div class="gallery-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <section class="section" id="requirements">
+      <div class="container section-heading reveal"><span class="section-kicker">Deployment Protocol</span><h2>What You Need to Run HyperDeck Dashboard</h2></div>
+      <div class="container requirements-grid">
+        <article class="requirement-card reveal"><span class="card-icon">◉</span><h3>Option 1: MAMP on macOS</h3><p>Recommended for a straightforward local installation.</p><ul><li>Supported macOS computer and current MAMP</li><li>Apache enabled; PHP 8.4.1 recommended for the current release</li><li>Dashboard files in MAMP's document root</li><li>Ethernet connectivity to each HyperDeck</li><li>Current desktop browser and local firewall permissions</li><li>Host powered on while Dashboard or scheduler is used</li></ul><code>/Applications/MAMP/htdocs/hyperdeck-dashboard/</code><code>http://localhost:8888/hyperdeck-dashboard/</code><small>The exact port can vary with MAMP configuration.</small></article>
+        <article class="requirement-card reveal"><span class="card-icon">▣</span><h3>Option 2: MAMP on Windows</h3><p>Supported Windows computer and current MAMP for Windows.</p><ul><li>Apache enabled and compatible PHP version</li><li>PHP 8.4.1 recommended when available</li><li>Project placed in the document root shown by MAMP</li><li>Ethernet connectivity and firewall access</li><li>Modern browser</li><li>Host running during scheduled operations</li></ul><div class="warning-box">Use the document root shown by the current MAMP installation rather than assuming a fixed Windows path.</div></article>
+        <article class="requirement-card reveal"><span class="card-icon">▤</span><h3>Option 3: Existing or Hosted Server</h3><p>Apache or another compatible server with PHP 8.4.1 recommended.</p><ul><li>Required PHP extensions enabled</li><li>Write permissions for settings, schedules, logs, or data</li><li>Outbound TCP access to HyperDeck control ports</li><li>Network routing to every HyperDeck</li><li>Appropriate authentication and network restrictions</li></ul><div class="warning-box">Normal public shared hosting usually cannot reach recorders on a private LAN. Do not expose the Dashboard or recorders directly to the public internet.</div></article>
+      </div>
+      <div class="container server-cta reveal"><div><span class="section-kicker">Local Server Environment</span><h3>Need a Local Web Server?</h3><p>MAMP provides Apache, Nginx, PHP, and MySQL for macOS and Windows. Standard MAMP is sufficient for a typical local installation.</p></div><a class="button mamp-download-button js-mamp" href="https://www.mamp.info/en/downloads/" aria-label="Download MAMP">
+  <svg class="mamp-button-icon mamp-button-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 14v5h14v-5"/></svg>
+  <span>Download MAMP</span>
+  <svg class="mamp-button-icon mamp-button-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v6H5V6h6"/></svg>
+</a></div>
+      <div class="container two-column-notes reveal"><div><h3>Browser requirements</h3><p>Current Chrome, Edge, Firefox, or Safari. Desktop browsers are recommended for full operational use.</p></div><div><h3>HyperDeck requirements</h3><p>One or more compatible recorders with Ethernet, valid IP configuration, remote Ethernet control, host network access, compatible firmware, and supported media.</p></div></div>
+    </section>
+
+    <section class="section section-bordered" id="installation">
+      <div class="container section-heading reveal"><span class="section-kicker">Installation Overview</span><h2>From Download to First Connection</h2></div>
+      <div class="container steps-grid reveal">
+        <article><span>Step 1</span><h3>Install the Server Environment</h3><p>Install MAMP on the host Mac or Windows computer, or prepare a compatible PHP web server.</p></article>
+        <article><span>Step 2</span><h3>Download HyperDeck Dashboard</h3><p>Download the current Release Candidate package from GitHub.</p><a class="text-link js-download" href="#download">Download HyperDeck Dashboard</a></article>
+        <article><span>Step 3</span><h3>Copy the Project</h3><p>Extract the package and place the folder inside the configured web-server document root.</p></article>
+        <article><span>Step 4</span><h3>Start the Web Server</h3><p>Start Apache through MAMP and confirm the local Dashboard address opens in a browser.</p></article>
+        <article><span>Step 5</span><h3>Add the HyperDecks</h3><p>Enter each recorder's name, IP address, model, and media configuration. Confirm every device reports online.</p></article>
+        <article><span>Step 6</span><h3>Test Before Production</h3><p>Test record, stop, play, timecode, media selection, scheduled start and stop, and the scheduler service with noncritical media.</p></article>
+      </div>
+      <div class="container install-snippets reveal" aria-labelledby="quick-install-title">
+        <div class="snippet-heading"><div><span class="section-kicker">Quick Start</span><h2 id="quick-install-title">Installation Commands</h2></div><p>Use the tabs for the local environment you are preparing. Copy buttons place the command in your clipboard.</p></div>
+        <div class="code-tabs" role="tablist" aria-label="Installation platform">
+          <button type="button" role="tab" aria-selected="true" data-code-tab="mac">macOS + MAMP</button>
+          <button type="button" role="tab" aria-selected="false" data-code-tab="windows">Windows + MAMP</button>
+          <button type="button" role="tab" aria-selected="false" data-code-tab="hosted">Hosted Server</button>
+        </div>
+        <div class="code-panel is-active" data-code-panel="mac"><div class="code-toolbar"><span>Terminal</span><button type="button" class="copy-code">Copy</button></div><pre><code>cd /Applications/MAMP/htdocs
+git clone https://github.com/Three-Crow-Studios/hyperdeck-dashboard.git
+open http://localhost:8888/hyperdeck-dashboard/</code></pre></div>
+        <div class="code-panel" data-code-panel="windows"><div class="code-toolbar"><span>PowerShell</span><button type="button" class="copy-code">Copy</button></div><pre><code>cd C:\MAMP\htdocs
+git clone https://github.com/Three-Crow-Studios/hyperdeck-dashboard.git
+start http://localhost:8888/hyperdeck-dashboard/</code></pre></div>
+        <div class="code-panel" data-code-panel="hosted"><div class="code-toolbar"><span>Shell</span><button type="button" class="copy-code">Copy</button></div><pre><code>cd /path/to/web-root
+git clone https://github.com/Three-Crow-Studios/hyperdeck-dashboard.git
+# Configure PHP 8.4.x, write permissions, and private LAN routing.</code></pre></div>
+        <p class="snippet-note">The hosted server must have secure network access to the HyperDeck recorder LAN. Do not expose the Dashboard or recorders directly to the public internet.</p>
+      </div>
+
+      <div class="container doc-links" id="documentation"><a href="#faq">Full Installation Guide</a><a href="#faq">Scheduler Setup</a><a href="#faq">Troubleshooting</a><a class="js-releases" href="#download">Release Notes</a></div>
+    </section>
+
+    <section class="section validation-section">
+      <div class="container validation-grid">
+        <div class="reveal"><span class="section-kicker">Validation Zone</span><h2>Help Validate the Release Candidate</h2><p>This Release Candidate represents the feature-complete build intended to become the next stable HyperDeck Dashboard release. Test with available HyperDeck models and report reproducible issues through GitHub.</p></div>
+        <dl class="release-table reveal"><div><dt>Published</dt><dd data-release-date>To be announced</dd></div><div><dt>Package type</dt><dd>ZIP</dd></div><div><dt>License</dt><dd data-release-license>Open-source license</dd></div><div><dt>Source</dt><dd>GitHub</dd></div><div><dt>Status</dt><dd data-release-status>Release Candidate</dd></div><div><dt>Intended next step</dt><dd>Stable release after validation</dd></div></dl>
+      </div>
+      <div class="container button-row reveal"><a class="button button-primary js-download" href="#download">Download HyperDeck Dashboard</a><a class="button button-secondary js-releases" href="#download">View Release Notes</a><a class="button button-secondary js-issues" href="#download">Report an Issue</a><a class="button button-secondary js-repository" href="#download">View Source Code</a></div>
+      <div class="container warning-line">Release Candidate software should be fully tested in the intended environment before critical or unattended recording.</div>
+    </section>
+
+    <section class="section section-bordered" id="download">
+      <div class="container download-grid">
+        <article class="download-card reveal"><div class="download-card-top"><span class="download-brand-logo product-card-logo" aria-hidden="true"><img src="assets/brand/download-card-hyperdeck.svg" alt=""></span><small>Application Downloads</small></div><h2>Choose Your Installation Package</h2><p>Use the dedicated Downloads page to select the MAMP package for macOS or Windows, or the Host / Development package for an existing PHP server.</p><div class="button-row"><a class="button button-primary" href="downloads.html">Open Downloads Page</a><a class="text-link js-repository" href="#">Browse Repository</a></div></article>
+        <article class="download-card reveal"><div class="download-card-top"><span class="download-brand-logo mamp-card-logo" aria-hidden="true"><img src="assets/brand/download-card-mamp.svg" alt=""></span><small>Required Local Server Environment</small></div><h2>MAMP</h2><p>MAMP separately provides the Apache and PHP environment required for a straightforward local installation on macOS or Windows. MAMP PRO is not required.</p><div class="button-row"><a class="button mamp-download-button js-mamp" href="https://www.mamp.info/en/downloads/" aria-label="Download MAMP">
+  <svg class="mamp-button-icon mamp-button-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 14v5h14v-5"/></svg>
+  <span>Download MAMP</span>
+  <svg class="mamp-button-icon mamp-button-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v6H5V6h6"/></svg>
+</a><a class="text-link" href="https://www.mamp.info/">MAMP Website ↗</a></div></article>
+      </div>
+      <div class="container open-source centered reveal"><span class="section-kicker">Independent Open-Source Project</span><h2>Open Source and Built to Evolve</h2><p>Download releases, review source, report bugs, request features, share compatibility information, fork the project, contribute improvements, and follow development.</p><div class="button-row centered"><a class="button button-primary js-repository" href="#">View GitHub Repository</a><a class="button button-secondary js-issues" href="#">Report an Issue</a><a class="button button-secondary js-issues" href="#">Request a Feature</a><a class="button button-secondary js-releases" href="#">Read Release Notes</a></div></div>
+      <section class="container roadmap-section reveal" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-heading centered">
+          <span class="section-kicker">Project Roadmap</span>
+          <h2 id="roadmap-title">Coming Beyond the Release Candidate</h2>
+          <p>The roadmap reflects the next areas of development and may evolve as hardware testing and community feedback continue.</p>
+        </div>
+        <div class="roadmap-grid">
+          <article><span>01</span><h3>Quad Record Support</h3><p>Expanded support for HyperDeck Extreme 8K HDR quad-record workflows.</p></article>
+          <article><span>02</span><h3>Shared Scheduling</h3><p>Improved schedule visibility and coordination across multiple Dashboard hosts.</p></article>
+          <article><span>03</span><h3>Additional Automation</h3><p>Webhooks • Email Automation<br>REST API • Event Triggers</p></article>
+          <article><span>04</span><h3>Broader Model Validation</h3><p>Continued compatibility testing across HyperDeck models, firmware, and media topologies.</p></article>
+          <article><span>05</span><h3>Playlist Improvements</h3><p>Expanded clip, playlist, and deck-level playback management.</p></article>
+          <article><span>06</span><h3>Media Management</h3><p>Ongoing refinement of slot detection, formatting, capacity planning, and active-media handling.</p></article>
+        </div>
+      </section>
+
+      <section class="container sponsor-section reveal" id="sponsor" aria-labelledby="sponsor-title">
+        <div class="sponsor-copy">
+          <span class="section-kicker">Support Development</span>
+          <h2 id="sponsor-title">Help Shape the Future of HyperDeck Dashboard</h2>
+          <p>HyperDeck Dashboard is developed as an independent open-source project around real-world broadcast production needs. If it saves time, simplifies a workflow, or becomes part of your production environment, consider supporting continued development through GitHub Sponsors.</p>
+          <ul class="sponsor-benefits">
+            <li>New HyperDeck features</li>
+            <li>Compatibility and hardware testing</li>
+            <li>Documentation and installation guidance</li>
+            <li>Interface improvements and long-term maintenance</li>
+          </ul>
+          <div class="button-row">
+            <a class="button sponsor-button js-sponsor" href="#"><span aria-hidden="true">♥</span> Sponsor on GitHub</a>
+          </div>
+        </div>
+        <aside class="sponsor-project-card" aria-label="Project information">
+          <img class="sponsor-project-logo" src="assets/brand/hyperdeck-dashboard-app-logo.svg" alt="HyperDeck Dashboard">
+          <div>
+            <dl>
+              <div><dt>Project</dt><dd>Open Source</dd></div>
+              <div><dt>License</dt><dd data-release-license>GPL-3.0</dd></div>
+              <div><dt>Status</dt><dd data-release-status>Release Candidate</dd></div>
+            </dl>
+            <p><strong>Designed &amp; Developed by Three Crow Studios</strong><br>Original Design and Modifications by Rob Hammer</p>
+          </div>
+        </aside>
+      </section>
+
+      <div class="container creator-grid reveal" id="creator">
+        <article class="creator-card studio-card">
+          <img class="three-crow-logo" src="assets/images/three-crow-studios-logo.png" alt="Three Crow Studios logo">
+          <div><span class="section-kicker">Product Development</span><h2>Three Crow Studios</h2><p class="creator-title">Designed &amp; Developed by Three Crow Studios</p><p>Technology, workflow design, software development, and production systems created for real-world media operations.</p><a class="text-link" href="http://www.threecrow.com/studios" target="_blank" rel="noopener">Visit Three Crow Studios ↗</a></div>
+        </article>
+        <article class="creator-card">
+          <img class="creator-photo" src="assets/images/robhammer.png" alt="Rob Hammer">
+          <div><span class="section-kicker">Creator &amp; Product Designer</span><h2>Rob Hammer</h2><p class="creator-credit-line">Original Design and Modifications by Rob Hammer</p><p class="creator-title">Broadcast Technology Executive · Live Sports Production Architect · Producer · Systems Designer</p><p>HyperDeck Dashboard was conceived around practical production needs, developed through hands-on testing with multiple HyperDeck models, and designed to make complex broadcast workflows more accessible, repeatable, and dependable.</p><div class="creator-links"><a class="text-link" href="http://www.threecrow.com/robhammer" target="_blank" rel="noopener">Professional Profile ↗</a><a class="text-link" href="https://www.linkedin.com/in/rob-hammer-37b52212/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container section-heading reveal"><span class="section-kicker">Questions and Answers</span><h2>Frequently Asked Questions</h2></div>
+      <div class="container faq-list reveal">
+        <details><summary>Is HyperDeck Dashboard a desktop application?</summary><p>No. It is a browser-based application that runs from a compatible PHP web server. MAMP is the recommended straightforward local server environment for macOS and Windows.</p></details>
+        <details><summary>Does it work on both macOS and Windows?</summary><p>Yes. The browser interface is cross-platform. The host computer must run MAMP or another compatible PHP-capable server.</p></details>
+        <details><summary>Does the browser need to stay open?</summary><p>The browser must be open for direct operator interaction. Scheduled events can execute without it after the background service is installed and verified. The host computer and server must remain running.</p></details>
+        <details><summary>Is MAMP required?</summary><p>MAMP is recommended, but another compatible PHP web server can be used when it meets the networking, file-permission, and PHP requirements.</p></details>
+        <details><summary>Is MAMP PRO required?</summary><p>No. Standard MAMP should be sufficient for a typical local installation.</p></details>
+        <details><summary>Can I install it on public web hosting?</summary><p>Only when that server has secure network access to the HyperDeck recorders. Normal shared hosting generally cannot reach devices on a private production network.</p></details>
+        <details><summary>Can I control it from another computer?</summary><p>Yes, when the browser device can reach the Dashboard host and the host is configured to accept the connection. Firewall and network settings may need adjustment.</p></details>
+        <details><summary>Does it work with every HyperDeck model?</summary><p>Compatibility and available features vary by model, firmware, media configuration, and Dashboard release. Consult the compatibility notes and test your hardware.</p></details>
+        <details><summary>Is this an official Blackmagic Design application?</summary><p>No. HyperDeck Dashboard is an independent open-source project and is not affiliated with, sponsored by, approved by, or supported by Blackmagic Design.</p></details>
+        <details><summary>Is the Release Candidate safe for production?</summary><p>It should be treated as prerelease software and fully tested with the intended recorders, media, network, host, and scheduler workflow before production use.</p></details>
+      </div>
+    </section>
+
+
+
+    <section class="section final-cta">
+      <div class="container cta-panel centered reveal"><span class="section-kicker">Ready for Connection</span><h2>Bring Every HyperDeck Into One Control Surface</h2><p>Download HyperDeck Dashboard, connect your recorders, and help validate the next stable release.</p><div class="button-row centered"><a class="button button-primary js-download" href="#">Download HyperDeck Dashboard</a><a class="button mamp-download-button js-mamp" href="https://www.mamp.info/en/downloads/" aria-label="Download MAMP">
+  <svg class="mamp-button-icon mamp-button-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 14v5h14v-5"/></svg>
+  <span>Download MAMP</span>
+  <svg class="mamp-button-icon mamp-button-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v6H5V6h6"/></svg>
+</a></div><a class="text-link js-repository" href="#">View the Project on GitHub</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div class="footer-brand"><img class="footer-studio-logo" src="assets/images/three-crow-studios-logo.png" alt="Three Crow Studios"><div><strong>HyperDeck Dashboard</strong><span>Designed &amp; Developed by Three Crow Studios</span><span>Original Design and Modifications by Rob Hammer</span><small>Website release information: <span data-release-status>Release Candidate</span></small></div></div><nav aria-label="Footer navigation"><a href="#overview">Overview</a><a href="#features">Features</a><a href="#requirements">Requirements</a><a href="#installation">Installation</a><a href="downloads.html">Downloads</a><a class="js-releases" href="#download">Release Notes</a><a class="js-repository" href="#download">GitHub</a><a class="js-issues" href="#download">Report an Issue</a><a class="js-mamp" href="https://www.mamp.info/en/downloads/">Download MAMP ↗</a></nav></div>
+    <div class="container legal"><p>HyperDeck Dashboard is an independent open-source project and is not affiliated with or endorsed by Blackmagic Design. Blackmagic Design, HyperDeck, and related product names are trademarks of their respective owners.</p><p>© <span data-current-year></span> Rob Hammer — original design and modifications · Licensed under GPL-3.0.</p></div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img src="" alt=""><p></p></dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
